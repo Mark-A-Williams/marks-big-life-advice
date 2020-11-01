@@ -8,8 +8,14 @@
 			document.documentElement.setAttribute('data-theme', 'light');
 			localStorage.setItem('theme', 'light');
 		}
-	}
+    }
 
+    function getNewQuote() {
+        const quoteToShow = quotes[Math.floor(Math.random() * quotes.length)];
+        const el = document.getElementById('quote');
+        el.innerText = quoteToShow;
+    }
+    
 	const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 
 	toggleSwitch.addEventListener('change', switchTheme, false);
@@ -33,9 +39,8 @@
 		'"A lunch time whisky is very risky."',
     ];
 
-    const quoteToShow = quotes[Math.floor(Math.random() * quotes.length)];
+    getNewQuote();
 
-    const el = document.getElementById('quote');
-
-    el.innerText = quoteToShow;
+    const imageElement = document.getElementById('image');
+    imageElement.addEventListener('click', getNewQuote);
 };
