@@ -11,8 +11,9 @@
     }
 
     function getNewQuote() {
-        const quoteToShow = quotes[Math.floor(Math.random() * quotes.length)];
         const el = document.getElementById('quote');
+        const filteredQuotes = quotes.filter(quote => quote !== el.innerText)
+        const quoteToShow = filteredQuotes[Math.floor(Math.random() * filteredQuotes.length)];
         el.innerText = quoteToShow;
     }
     
