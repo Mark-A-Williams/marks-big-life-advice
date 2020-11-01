@@ -42,6 +42,5 @@
 
     getNewQuote();
 
-    const imageElement = document.getElementById('image');
-    imageElement.addEventListener('click', getNewQuote);
+    document.getElementById('image').addEventListener('click', getNewQuote);
 };
