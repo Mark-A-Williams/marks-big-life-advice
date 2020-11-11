@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,19 +9,24 @@
 
     <script defer src="/__/firebase/7.9.1/firebase-app.js"></script>
     <script defer src="/__/firebase/init.js"></script>
+    <script src="js/loadTheme.js"></script>
 </head>
 <body>
-	<div class="theme-switch-wrapper">
-		<label class="theme-switch" for="checkbox">
-			<input type="checkbox" id="checkbox" />
-			<div class="slider round"></div>
-	  </label>
-	</div>
-    <h1>Mark's Big Life Advice</h1>
-    <main>
-        <img src="marks-life-advice.png" alt="Picture of Mark">
-        <p id="quote"></p>
-    </main>
-    <script src="script.js" async></script>
+<div class="theme-switch-wrapper">
+    <label class="theme-switch" for="checkbox"> <input type="checkbox" id="checkbox"/>
+        <div class="slider round"></div>
+    </label>
+</div>
+<h1>Mark's Big Life Advice</h1>
+<main>
+    <img src="marks-life-advice.png" alt="Picture of Mark">
+    <p id="quote"></p>
+    <h4>Hear it in Mark's very own dulcet tones:</h4>
+        <audio id="audio-container" controls>
+            <source src="" id="quote-audio" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+</main>
+<script src="js/script.js" async></script>
 </body>
 </html>
