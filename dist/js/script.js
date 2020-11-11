@@ -6,6 +6,7 @@
         {audio: '', quote: '"I don\'t care where it came from, I care where it\'s going."'},
         {audio: '', quote: '"Never attribute to malice that which can be attributed to stupidity."'},
         {audio: 'whisky.mp3', quote: '"A lunch time whisky is very risky."'},
+        {audio: '', quote: '"A billion here, a billion there, and pretty soon you\'re talking real money."'},
     ];
 
     function getNewQuote() {
