@@ -26,21 +26,33 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 4rem;
+    font-size: 5.5vw;
+    width: 100%;
+    margin: 0 0 2rem 0;
 }
 
-h2 {
-    font-size: 2.5rem;
+h4 {
+    width: 100%;
+    text-align: center;
+    font-size: 1vw;
 }
 
 p {
-    font-size: 2.5rem;
+    font-size: 3vw;
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0 0 0;
+}
+
+.image-container {
+    width: 100%;
+    text-align: center;
 }
 
 img {
-    width: 25%;
     cursor: pointer;
     transition: 750ms transform ease-out;
+    width: 26%;
 }
 
 img.spin {
@@ -48,7 +60,14 @@ img.spin {
 }
 
 main {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 100%;
+}
+
+#audio-container {
+    display: block;
+    margin: 0 auto;
 }
 
 /* ========================= THEME SWITCHER  =============================*/
